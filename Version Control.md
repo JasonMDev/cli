@@ -9,25 +9,30 @@ These are code snippets for general version control using GitHub via the Command
 ####File & Folder Management
 =======
 #####Create new file:
-```sh
-$ :> filename.ext
+- A: ```$ :> filename.ext```
+- B: ```$ :>> filename.ext```
+- C: ```` $ touch filename.ext ````
+
+#####Edit in nano:
+ ```sh 
+ $ nano filename.ext
+ ```
+
+#####See in cli:
+```zsh 
+$ cat filename.ext 
 ```
-```sh $ :>> filename.ext```
-```` $ touch filename.ext ````
 
-Read file in bash: sh,bash, zsh new file $ :> filename.ext or $ :>> filename.ext or $ touch filename.ext Edit in nano: $ nano filename.ext
+####New Repository 
+- Create Folder 
+- Create repo in GitHub 
+- ```$ git init ```
+- ```$ git add . ```
+- ```$ git commit -am "Initialise Repository." ```
+- ```$ git remote add origin https://github.com/JasonMDev/project-name.git ```
+- ```$ git push -u origin --all ``` # pushes up the repo and its refs for the first time
 
-sh See in cli:
+####Fetch and merge
 
-$ cat filename.ext 
-bash
-
-$ cat filename.ext 
-zsh
-
-$ cat filename.ext 
-New Repository Create Folder Create repo in GitHub $ git init $ git add . $ git commit -am "Initialise Repository." $ git remote add origin https://github.com/JasonMDev/project-name.git $ git push -u origin --all # pushes up the repo and its refs for the first time
-
-Fetch and merge
-
-$ git fetch $ git merge origin/master
+```$ git fetch ```
+```$ git merge origin/master```
