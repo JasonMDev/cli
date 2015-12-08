@@ -7,6 +7,7 @@ These are code snippets for general version control using GitHub via the Command
 #####Heading 5
 
 ####File & Folder Management
+=======
 #####Create new file:
 - ```sh
 $ :> filename.ext
