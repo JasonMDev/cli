@@ -6,8 +6,10 @@ These are code snippets for general version control using GitHub via the Command
 ####Heading 4
 #####Heading 5
 
-####File & Folder Management
-=======
+##Set-Up Version Control
+####New Repository 
+
+##File & Folder Management
 #####Create new file:
 - A: ```$ :> filename.ext```
 - B: ```$ :>> filename.ext```
@@ -22,7 +24,7 @@ These are code snippets for general version control using GitHub via the Command
 ```zsh 
 $ cat filename.ext 
 ```
-
+##Initiate Version Control
 ####New Repository 
 - Create Folder : *project-name*
 - Create repo in GitHub : *project-name*
