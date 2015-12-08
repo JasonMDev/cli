@@ -4,8 +4,18 @@
 Read file in bash: sh,bash, zsh
 new file `$ :> filename.ext` or `$ :>> filename.ext` or `$ touch filename.ext`
 Edit in nano: `$ nano filename.ext`
-See in cli: `$ cat filename.ext` 
-
+##### sh See in cli: 
+```sh
+$ cat filename.ext 
+```
+##### bash 
+```bash
+$ cat filename.ext 
+```
+##### zsh 
+```zsh
+$ cat filename.ext 
+```
 
 New Repository
 Create Folder
