@@ -35,4 +35,5 @@ $ cat filename.ext
 ####Fetch and merge
 
 ```$ git fetch ```
+<br>
 ```$ git merge origin/master```
