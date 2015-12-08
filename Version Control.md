@@ -24,8 +24,8 @@ $ cat filename.ext
 ```
 
 ####New Repository 
-- Create Folder 
-- Create repo in GitHub 
+- Create Folder : *project-name*
+- Create repo in GitHub : *project-name*
 - ```$ git init ```
 - ```$ git add . ```
 - ```$ git commit -am "Initialise Repository." ```
