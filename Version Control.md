@@ -9,11 +9,11 @@ These are code snippets for general version control using GitHub via the Command
 ####File & Folder Management
 =======
 #####Create new file:
-- ```sh
+```sh
 $ :> filename.ext
 ```
-- ```` $ :>> filename.ext
-- ```` $ touch filename.ext 
+```sh $ :>> filename.ext```
+```` $ touch filename.ext ````
 
 Read file in bash: sh,bash, zsh new file $ :> filename.ext or $ :>> filename.ext or $ touch filename.ext Edit in nano: $ nano filename.ext
 
