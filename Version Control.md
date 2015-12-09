@@ -35,7 +35,15 @@ $ cat filename.ext
 - ```$ git push -u origin --all ``` # pushes up the repo and its refs for the first time
 
 ####Fetch and merge
+Use fetch method:
 
 ```$ git fetch ```
 <br>
 ```$ git merge origin/master```
+
+use "git pull" to update your local branch:
+```$ git fetch ```
+<br>
+```$ git pull ```
+
+
