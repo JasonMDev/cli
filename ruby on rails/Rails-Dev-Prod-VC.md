@@ -62,6 +62,8 @@ $ git push
 $ bundle exec rake test
 $ git push heroku
 $ heroku run rake db:migrate
+$ heroku run console --sandbox
+>> User.create(name: "Joe Smoe", email: "js@example.com", password: "foobar", password_confirmation: "foobar")
 
 ## Test Driven Development
 1. Run test suite: `$ bundle exec rake test`
