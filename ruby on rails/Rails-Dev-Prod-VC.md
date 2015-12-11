@@ -4,6 +4,11 @@ This is the place for command line snippets for using Ruby on Rails.
 ##Version Control: GitHub
 ##Deployment: Heroku
 
+##1. Make a workspace
+ ```sh 
+ $ cd
+ ``` 
+*# Change to the home directory.*
 ##Set-Up Version Control
 ####New Repository 
 
