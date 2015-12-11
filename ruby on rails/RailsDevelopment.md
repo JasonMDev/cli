@@ -1,10 +1,8 @@
-#Version Control with GitHub
-These are code snippets for general version control using GitHub via the Command Line Interface.
+#Production and Development with Ruby on Rails
+This is the place for command line snippets for using Ruby on Rails.
 
-##Heading 2
-###Heading 3
-####Heading 4
-#####Heading 5
+##Version Control: GitHub
+##Deployment: Heroku
 
 ##Set-Up Version Control
 ####New Repository 
