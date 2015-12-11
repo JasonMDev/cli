@@ -20,7 +20,7 @@ This is the place for command line snippets for using Ruby on Rails.
 
 ### Set-up Heroku
 
-##Development 
+##Development Cycle
 ### Generate new app and folders
 1. ` $ cd ~/workspace  ` *# "~" jumps to workspace*
 2. ` $ rails _4.2.2_ new my_app ` *# This ensures that the same version of Rails that has been installed is used to create the first application’s file structure.*
@@ -44,8 +44,70 @@ This is the place for command line snippets for using Ruby on Rails.
 6. [Got to listing 1.12... firt repo push upstream, find one that works.... dummy]
 7. 
 
+## Test Driven Development
+1. Run test suite: `$ bundle exec rake test`
+2. Run specific folder test: `$ bundle exec rake test:specific`
+
+
+
+##MVC Framework Usages
+###Models
+#### Modelling Users
+1. Generating a User model. `$ rails generate model User name:string email:string`
+2. Run the migration: `$ bundle exec rake db:migrate`
+3. Roll-back the migration if there was an error or mistake: `$ bundle exec rake db:rollback`
+4. Add structure to an existing model via migration generator: `$ rails generate migration add_index_to_users_email`
+5. Add the instructions manually in the new migration file: 
+````ruby 
+ add_index :users, :email, unique: true
+ ````
+
+#### Exploring Models in console:
+##### Creating User Objects
+1. Sandbox Rails Console: `$ rails console --sandbox` *# Any modifications you make will be rolled back on exit.*
+2. Create new user object in memory: 
+````ruby 
+ >> user = User.new(name: "Joe Smoe", email: "JS@example.com")
+````
+3. Test the validity of user: `user.valid?`
+4. Save the new user: ` >> user.save`
+5. Check user: `>> user`
+6. Check user: `>> user.name`
+7. Check user: `>> user.email`
+8. Check user: `>> user.updated_at`
+9. Make and save:
+````ruby
+ >> User.create(name: "A Nother", email: "another@example.org")
+ >> foo = User.create(name: "Foo", email: "foo@bar.com")
+````
+10. Delete/destroy: `>> User.destroy`
+ 
+##### Finding user objects
+1. Find user id 1: `>> User.find(1)`
+2. Find user by email: `>> User.find_by(email: "JS@example.com")`
+3. Find the first user: `>> User.first`
+4. Find all users: `>> User.all`
+
+##### Updating user objects
+1. Update user method 1: `>> user.email = "guy@lives.org"`
+2. Update user method 2: 
+````ruby
+ >> user.update_attributes(name: "The Guy", email: "guy@lives.org")
+````
+
+#### User Validation:
+1. Run model test: `$ bundle exec rake test:models`
+2. Check full error message in colsole: `>> user.errors.full_messages`
+
+
+
+
+
 ##Set-Up Version Control
 ####New Repository 
+
+$ git checkout master
+$ git checkout -b modeling-users
 
 ##File & Folder Management
 #####Moving around:
