@@ -26,7 +26,7 @@ This is the place for command line snippets for using Ruby on Rails.
 2. ` $ rails _4.2.2_ new my_app ` *# This ensures that the same version of Rails that has been installed is used to create the first application’s file structure.*
 3. Replace default 'Gemfile.rb' with the base 'Gemfile.rb'.
 4. ` $ cd my_app/   ` *# Change into the app directory.*
-5. ` $ bundle install   ` *# Install the new Gems via command.*
+5. ` $ $ bundle install --without production` *# Install the new Gems via command.*
 6. ` $ rails server   ` *# Check if everything is working.*
 7. ` $ mv README.rdoc README.md` *# Change to md file type.*
 8. Replace '.gitignore file with standard.
@@ -43,6 +43,25 @@ This is the place for command line snippets for using Ruby on Rails.
  b. Alternative: ` $ git log --pretty=format:"%h %s" --graph` 
 6. [Got to listing 1.12... firt repo push upstream, find one that works.... dummy]
 7. 
+
+### Commit cycle
+1. ` $ cd ~/workspace/my_app/   ` *# Change into the app directory.*
+2. $ git checkout master
+$ git checkout -b modeling-users
+If you’re using Git, now would be a good time to commit if you haven’t done so in a while:
+
+$ bundle exec rake test
+$ git add -A
+$ git commit -m "Make a basic User model (including secure passwords)"
+Then merge back into the master branch and push to the remote repository:
+
+$ git checkout master
+$ git merge modeling-users
+$ git push
+
+$ bundle exec rake test
+$ git push heroku
+$ heroku run rake db:migrate
 
 ## Test Driven Development
 1. Run test suite: `$ bundle exec rake test`
@@ -61,6 +80,8 @@ This is the place for command line snippets for using Ruby on Rails.
 ````ruby 
  add_index :users, :email, unique: true
  ````
+6. Run the migration: `$ bundle exec rake db:migrate`
+7. Add password digest to users:`$ rails generate migration add_password_digest_to_users password_digest:string`
 
 #### Exploring Models in console:
 ##### Creating User Objects
@@ -99,6 +120,13 @@ This is the place for command line snippets for using Ruby on Rails.
 1. Run model test: `$ bundle exec rake test:models`
 2. Check full error message in colsole: `>> user.errors.full_messages`
 
+#### User Authentication:
+1. >> User.create(name: "Joe Smoe", email: "JS@example.com", password: "foobar", password_confirmation: "foobar")
+2. : ` `>> user = User.find_by(email: "JS@example.com")
+2. : ` `>> user.password_digest
+3. >> !!user.authenticate("not teh right password") +> returnrs false
+4. >> user.authenticate("foobar") => returns user
+4. >> !!user.authenticate("foobar")
 
 
 
