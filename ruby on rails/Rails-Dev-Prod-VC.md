@@ -5,10 +5,10 @@ This is the place for command line snippets for using Ruby on Rails.
 ##Deployment: Heroku
 
 ##1. Make a workspace
- ```sh 
- $ cd
- ``` 
-*# Change to the home directory.*
+ ` $ cd              ` *# Change to the home directory.* <br>
+ ` $ mkdir workspace ` *# Make a workspace directory.* <br>
+ ` $ cd workspace/   ` *# Change into the workspace directory.*
+
 ##Set-Up Version Control
 ####New Repository 
 
