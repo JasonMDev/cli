@@ -155,9 +155,7 @@ $ git checkout -b modeling-users
  $ nano filename.ext
  ```
 
-#####See in cli:
-```zsh 
-$ cat filename.ext 
+
 ```
 ##Initiate Version Control
 ####New Repository 
