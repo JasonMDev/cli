@@ -3,8 +3,7 @@ These are code snippets for general version control using GitHub via the Command
 
 ##Heading 2
 ###Heading 3
-####Heading 4
-#####Heading 5
+
 
 ##Set-Up Version Control
 ####New Repository 
