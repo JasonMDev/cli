@@ -137,32 +137,3 @@ $ heroku run console --sandbox
 $ git checkout master
 $ git checkout -b modeling-users
 
-##File & Folder Management
-#####Moving around:
-- A: ```$ cd ~``` *# Go to home location.*
-- B: ```$ cd ..``` *# Go down one folder.*
-
-
-#####Create new file:
-- A: ```$ :> filename.ext```
-- B: ```$ :>> filename.ext```
-- C: ```` $ touch filename.ext ````
-
-#####Edit in nano:
- ```sh 
- $ nano filename.ext
- ```
-
-####Fetch and merge
-Use fetch method:
-
-```$ git fetch ```
-<br>
-```$ git merge origin/master```
-
-use "git pull" to update your local branch:
-```$ git fetch ```
-<br>
-```$ git pull ```
-
-
