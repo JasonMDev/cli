@@ -5,8 +5,6 @@ This is the place for command line snippets for using Ruby on Rails.
 ####Deployment: Heroku
 
 ##Set-Up Development Environment
-
-##Set-Up Development Environment
 ### Make a workspace
 ` $ cd              ` *# Change to the home directory.* <br>
 ` $ mkdir workspace ` *# Make a workspace directory.* <br>
@@ -154,18 +152,6 @@ $ git checkout -b modeling-users
  ```sh 
  $ nano filename.ext
  ```
-
-
-```
-##Initiate Version Control
-####New Repository 
-- Create Folder : *project-name*
-- Create repo in GitHub : *project-name*
-- ```$ git init ```
-- ```$ git add . ```
-- ```$ git commit -am "Initialise Repository." ```
-- ```$ git remote add origin https://github.com/JasonMDev/project-name.git ```
-- ```$ git push -u origin --all ``` # pushes up the repo and its refs for the first time
 
 ####Fetch and merge
 Use fetch method:
