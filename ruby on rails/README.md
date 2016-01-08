@@ -6,6 +6,7 @@ Index:
 2.  Project Folder Set-Up;
 3.  Version Control;
 4.  Deployment Set-up;
+5.  Environments: Development, Test and Production
 5.  Testing;
 6.  Basic Development Cycle;
 7.  Model Set-up & Development;
@@ -18,7 +19,7 @@ Index:
 12. Filters;
 13. Validations;
 14. Callbacks;
-15. Security;
+15. Security; with production environment. section 7.5.1
 16. Testing;
 17. Deployment;
 18. CLI Commands;
