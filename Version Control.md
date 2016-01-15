@@ -26,7 +26,7 @@ $ cat filename.ext
 ##Initiate Version Control
 ####New Repository 
 - Create Folder : *project-name*
-- Create repo in GitHub : *project-name*
+- Create empty repo in GitHub : *project-name*
 - ```$ git init ```
 - ```$ git add . ```
 - ```$ git commit -am "Initialise Repository." ```
