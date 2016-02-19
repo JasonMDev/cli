@@ -45,4 +45,7 @@ use "git pull" to update your local branch:
 <br>
 ```$ git pull ```
 
+####Push all branches up
+```$ git push --all -u```
+
 
