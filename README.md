@@ -1,5 +1,5 @@
 #README.MD
-### This is my repor dfor keppingtack of command line interfaces.
+### This is my repo for keeping track of command line interfaces.
 
 Read file in bash: sh,bash, zsh
 new file `$ :> filename.ext` or `$ :>> filename.ext` or `$ touch filename.ext`
